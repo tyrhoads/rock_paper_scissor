@@ -1,11 +1,12 @@
 import random
 
+
 def is_win(player,Ai):
     if (player == 'r' and Ai == 's') or (player == 's' and Ai == 'p')\
         or (player == 'p' and Ai == 'r'):
         return True
 def play():
-    user = input("r, for rock:  s, for scissors: p, for paper")
+    user = input("choose your weapon:  r, for rock:  s, for scissors: p, for paper")
     computer = random.choice(['r','p','s']) 
     
     if user == computer:
@@ -15,6 +16,9 @@ def play():
 
     return 'You lose'
     
+while True:
 
-    
-print(play())
+    print(play())
+    question = input("would you like to continue[y/n]")
+    if question == 'n':
+        break
