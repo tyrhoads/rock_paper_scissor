@@ -17,7 +17,7 @@ def play():
     return 'You lose'
     
 while True:
-
+    ## starts the game and asks if the player want to keep going. 
     print(play())
     question = input("would you like to continue[y/n]")
     if question == 'n':
